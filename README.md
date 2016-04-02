@@ -54,9 +54,9 @@ Instale os pacotes abaixo:<br>
 <code>echo 'Teste.' | mutt -s 'Teste de envio pelo shell' SeuEmail@gmail.com</code><br><br>
 
 Cheque a caixa de entrada do seu e-mail, ou o aquivo de log em <i>"/var/log/mail.log".</i>
-Perceba o "status=", teve estar "status=sent".<br><br>
+Perceba o "status=", teve estar "status=sent".<br>
 
-<code>tail -f /var/log/mail.log</code>
+<code>tail -f /var/log/mail.log</code><br><br>
 
 # OBS
 

@@ -7,7 +7,7 @@ O "How to" foi testado no ZABBIX 2.4 e no 3.0 com base em Debian.
 Instale os pacotes abaixo:<br>
 <blockquote> <p>CentOS 6.x e 7</p> </blockquote>
 <code>yum install postfix</code><br>
-<code>hkconfig postfix on</code><br>
+<code>chkconfig postfix on</code><br>
 <code>service postfix start</code><br><br>
 <blockquote> <p>Debian</p> </blockquote>
 <code>sudo apt-get install postfix mailutils libsasl2-2 ca-certificates libsasl2-modules</code><br><br>

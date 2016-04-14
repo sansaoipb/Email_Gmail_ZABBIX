@@ -8,7 +8,7 @@ Instale os pacotes abaixo:<br>
 <blockquote> <p>CentOS 6.x e 7</p> </blockquote>
 <code>yum install cyrus-sasl cyrus-sasl-devel cyrus-sasl-gssapi cyrus-sasl-md5 cyrus-sasl-plain mutt postfix</code><br>
 <code>chkconfig postfix on</code><br>
-<code>service postfix start</code><br><br>
+<!--<code>service postfix start</code><br><br>-->
 <blockquote> <p>Debian</p> </blockquote>
 <code>sudo apt-get install postfix mailutils libsasl2-2 ca-certificates libsasl2-modules mutt mutt-patched</code><br><br>
 <i>Irá aparecer a seguinte imagem abaixo, selecione a opção Site Internet e selecione OK.</i><br>

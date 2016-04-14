@@ -6,11 +6,11 @@ O "How to" foi testado no ZABBIX 2.4 e no 3.0 com base em Debian.
 
 Instale os pacotes abaixo:<br>
 <blockquote> <p>CentOS 6.x e 7</p> </blockquote>
-<code>yum install postfix</code><br>
+<code>yum install cyrus-sasl cyrus-sasl-devel cyrus-sasl-gssapi cyrus-sasl-md5 cyrus-sasl-plain mutt postfix</code><br>
 <code>chkconfig postfix on</code><br>
 <code>service postfix start</code><br><br>
 <blockquote> <p>Debian</p> </blockquote>
-<code>sudo apt-get install postfix mailutils libsasl2-2 ca-certificates libsasl2-modules</code><br><br>
+<code>sudo apt-get install postfix mailutils libsasl2-2 ca-certificates libsasl2-modules mutt mutt-patched</code><br><br>
 <i>Irá aparecer a seguinte imagem abaixo, selecione a opção Site Internet e selecione OK.</i><br>
 <i>Digite o nome do seu servidor de e-mail, EX: monitoramento.com</i><br>
 <i>Em seguida, entre no diretório de configuração do Postfix, faça o backup do arquivo de configuração:</i><br>
@@ -55,12 +55,19 @@ Instale os pacotes abaixo:<br>
 
 <i>Pronto, agora você está com tudo certo para enviar e-mails através do shell. Faça um teste: </i><br>
 
-<code>echo 'Teste.' | mail -s 'Teste de envio pelo shell' SeuEmail@gmail.com</code><br><br>
+<code>echo 'Teste.' | mutt -s 'Teste de envio pelo shell' SeuEmail@gmail.com</code><br><br>
 
-Cheque a caixa de entrada do seu e-mail, ou o aquivo de log em <i>"/var/log/mail.log".</i>
+Cheque a caixa de entrada do seu e-mail, ou o aquivo de log.<br>
 Perceba o "status=", teve estar "status=sent".<br><br>
 
-<code>tail -f /var/log/mail.log</code>
+<blockquote> <p>CentOS 6.x e 7</p> </blockquote>
+<code>tail -f /var/log/maillog</code><br><br>
+
+<blockquote> <p>Debian</p> </blockquote>
+<code>tail -f /var/log/mail.log</code><br><br>
+
+
+
 
 # OBS
 

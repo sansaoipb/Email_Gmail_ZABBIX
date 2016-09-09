@@ -45,7 +45,7 @@ Instale os pacotes abaixo:<br>
 
 <code>sudo chown zabbix:zabbix sasl_passwd ; sudo chmod 600 sasl_passwd</code><br><br>
 
-<i>Valide as permissões</i> <u>(caso dê "arquivo não encontrado" ou qualquer erro, pode ignorar e seguir)<u><br>
+<i>Valide as permissões</i> (caso dê "arquivo não encontrado" ou qualquer erro, pode ignorar e seguir)<br>
 
 <code>sudo cat /etc/ssl/certs/Thawte_Premium_Server_CA.pem | sudo tee -a /etc/postfix/cacert.pem</code><br><br>
 

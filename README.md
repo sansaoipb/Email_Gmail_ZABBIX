@@ -11,7 +11,7 @@ Instale os pacotes abaixo:<br>
 <!--<code>service postfix start</code><br><br>-->
 <blockquote> <p>Debian</p> </blockquote>
 <code>sudo apt-get install postfix mailutils libsasl2-2 ca-certificates libsasl2-modules mutt mutt-patched</code><br><br>
-<i>Irá aparecer a seguinte imagem abaixo, selecione a opção Site Internet e selecione OK.</i><br>
+<i>Irá aparecer uma tela, selecione a opção Site Internet e selecione OK.</i><br>
 <i>Digite o nome do seu servidor de e-mail, EX: monitoramento.com</i><br>
 <i>Em seguida, entre no diretório de configuração do Postfix, faça o backup do arquivo de configuração:</i><br>
 
@@ -58,7 +58,7 @@ Instale os pacotes abaixo:<br>
 <code>echo 'Teste.' | mutt -s 'Teste de envio pelo shell' SeuEmail@gmail.com</code><br><br>
 
 Cheque a caixa de entrada do seu e-mail, ou o aquivo de log.<br>
-Perceba o "status=", teve estar "status=sent".<br><br>
+Perceba o "status=", deve estar "status=sent".<br><br>
 
 <blockquote> <p>CentOS 6.x e 7</p> </blockquote>
 <code>tail -f /var/log/maillog</code><br><br>

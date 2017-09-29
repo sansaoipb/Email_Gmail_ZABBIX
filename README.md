@@ -25,11 +25,11 @@ O "How to" foi testado no ZABBIX 2.4 e no 3.0 com base em Debian.
 
 Instale os pacotes abaixo:<br>
 <blockquote> <p>CentOS 6.x e 7</p> </blockquote>
-<code>yum install cyrus-sasl cyrus-sasl-devel cyrus-sasl-gssapi cyrus-sasl-md5 cyrus-sasl-plain mutt postfix</code><br>
-<code>chkconfig postfix on</code><br>
+<code>yum install -y cyrus-sasl cyrus-sasl-devel cyrus-sasl-gssapi cyrus-sasl-md5 cyrus-sasl-plain mutt postfix</code><br>
+<code>chkconfig postfix on</code><br><br>
 <!--<code>service postfix start</code><br><br>-->
 <blockquote> <p>Debian</p> </blockquote>
-<code>sudo apt-get install postfix mailutils libsasl2-2 ca-certificates libsasl2-modules mutt mutt-patched</code><br><br>
+<code>sudo apt-get install -y postfix mailutils libsasl2-2 ca-certificates libsasl2-modules mutt mutt-patched</code><br><br>
 <i>Irá aparecer uma tela, selecione a opção Site Internet e selecione OK.</i><br>
 <i>Digite o nome do seu servidor de e-mail, EX: monitoramento.com</i><br>
 <i>Em seguida, entre no diretório de configuração do Postfix, faça o backup do arquivo de configuração:</i><br>
